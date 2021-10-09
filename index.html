@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="img/png" sizes="32x32" href="img/">
+	<link rel="icon" type="img/png" sizes="16x16" href="img/">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Федянина Алёна</title>
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navhead">
+		<div class="container-fluid">
+
+		    <h3><a class="navbar-brand" href="#">Федянина Алёна</a></h3>
+
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+			        <li class="nav-item">
+						<a class="nav-link" onclick="slowScroll('#carouselCaptions')">Мои работы</a>
+			        </li>
+
+			        <li class="nav-item">
+			        	<a class="nav-link" onclick="slowScroll('#video')">Обо мне</a> <!--О художнице-->
+			        </li>
+
+					<li class="nav-item">
+			        	<a class="nav-link" onclick="slowScroll('#p_r2')">Почему я?</a>
+			        </li>
+
+			        <li class="nav-item">
+			        	<a class="nav-link" onclick="slowScroll('#contacts')">Контакты</a>
+			        </li>
+
+		        </ul>
+
+		        <form class="d-flex">
+					<button class="btn btn-outline-success" type="button" style="background-color: rgb(255,127,80);"><a class="nav-link p-0" style="color: white;" onclick="slowScroll('#contacts')" target="_blank">Связаться со мной</a></button>
+		  	    </form>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+	  		</div>
+
+		  	<div class="carousel-inner">
+
+		    	<div class="carousel-item active" id="forCorusel" data-bs-interval="5000">
+					
+					<img src="img\7.jpg" class="d-block w-100" alt="">
+
+		    	</div>
+
+			    <div class="carousel-item" id="forCorusel" data-bs-interval="5000">
+
+			    	<img src="img\12.jpg" class="d-block w-100" alt="img\12.png">
+
+			    </div>
+
+				<div class="carousel-item" id="forCorusel" data-bs-interval="5000">
+					
+					<img src="img\4.jpg" class="d-block w-100" alt="">
+
+				</div>
+
+				<div class="carousel-item" id="forCorusel" data-bs-interval="5000">
+					
+					<img src="img\2.jpg" class="d-block w-100" alt="">
+
+				</div>
+
+
+				<div class="carousel-item" id="forCorusel" data-bs-interval="5000">
+					
+					<img src="img\1.jpg" class="d-block w-100" alt="">
+
+				</div>
+
+				<div class="carousel-item" id="forCorusel" data-bs-interval="5000">
+					
+					<img src="img\8.jpg" class="d-block w-100" alt="">
+
+				</div>
+
+
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"  data-bs-slide="prev">
+	    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    		<span class="visually-hidden">Предыдущий</span>
+			</button>
+
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"  data-bs-slide="next">
+	    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    		<span class="visually-hidden">Следующий</span>
+			</button>
+		</div>
+		
+		<hr id="big_hr">
+
+		<div class="container-fluid">
+			<div class="row" id="head">
+				<div class="col m-5 p-5" id="video">
+					<h1 id="header_video" class="col m-5 p-5 navbar-brand text-center">Обо мне</h1>
+					<p id="p_r" class="col text-center">🔥 Художница</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">🔥 Создаю самые сочные картины</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">🔥 Доставка в любую точку мира</p>
+					<hr id="hr">
+					<p id="p_r2" class="col text-center">🔥 Любые размеры, в наличии и на заказ</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container-fluid">
+
+			<h1 id="header_projects" class="col navbar-brand text-center">Почему я?</h1>
+
+			<div class="row container-fluid" id="blocks_net">
+				
+				<div class="col-md-4" id="div_block">
+					<p class="text-center pp">Более 50 довольных заказчиков</p>
+				</div>
+
+				<div class="col-md-3" id="div_block">
+					<p class="text-center pp">Все отзывы публикую в Instagram</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<p class="text-center pp">Мария Кожевникова и Дмитрий Маликов уже приобрели свои портреты!</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<p class="text-center pp">Доставка по всему миру!</p>
+				</div>
+
+				<div class="col-md-3" id="div_block">
+					<p class="text-center pp">Всегда открыта новым идеям</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<p class="text-center pp">Больше работ в моём Instagram!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="contacts" class="col m-5 p-5 navbar-brand text-center">Контакты</h1>
+		</div>
+
+		<div class="container-fluid" id="foot">
+			<div class="row">			
+				<div class="col-md-2" id="icon_block">
+					<a href="" target="_blank"><img id="icon" src="img/mail_logo.png"></a>
+				</div>
+				<div class="col-md-2" id="contact_name">*Почта*</div>
+
+				<div class="col-md-2" id="icon_block_1">
+					<a href="https://www.instagram.com/_art_alenka_/" target="_blank"><img id="icon_inst" src="https://clipartmag.com/image/instagram-logo-drawing-31.png"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music"><a id="link_contact" href="https://www.instagram.com/_art_alenka_/" target="_blank">Instagram</a></div>
+
+				<div class="col-md-2" id="icon_block_2">
+					<a href="https://goo.su/88He" target="_blank"><img id="icon" src="https://mastersluh-krasnodar.ru/images/wapp.png"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music"><a id="link_contact" href="https://goo.su/88He" target="_blank">What's App</a></div>
+
+			</div>
+			
+		</div>
+
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+
+
+	<script type="text/javascript">
+		function slowScroll(id) {
+			$('html, body').animate({
+				scrollTop: $(id).offset().top}, 1000);
+			return false
+		}
+
+		function slowScroll_coder(id) {
+			var offset = -50;
+			$('html, body').animate({
+				scrollTop: $(id).offset().top - offset}, 1000);
+			return false
+		}
+	</script>
+
+</body>
+</html>
